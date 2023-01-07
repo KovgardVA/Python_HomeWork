@@ -10,3 +10,12 @@ def digitSum(num):
 
 number = input('Введите число: ')
 print(f'Сумма всех цифр числа: {digitSum(number)}')
+
+# for i in num:
+#     if i.isdigit():
+#         sum += int(i)
+
+# num = float(input())
+# len_num = len(str(num))
+# while num != int(num):
+#     num = round(num * 10, len_num)

@@ -3,8 +3,10 @@
 
 max_number = 4
 dictionary = {}
+sum = 0
 
 for i in range (1, max_number + 1):
     dictionary[i] = round((1 + 1/i)**i, 2)
+    sum += dictionary[i]
 
-print(dictionary)
+print(dictionary, sum, sep='\n')

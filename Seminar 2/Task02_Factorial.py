@@ -12,10 +12,10 @@ def input_number(input_text):
     return number
 
 def factorial(number):
-    list = [1]
+    list_num = [1]
     for i in range(2, number + 1):
-        list.append(i * list[i - 2])
-    return list
+        list_num.append(i * list_num[i - 2])
+    return list_num
 
 num = input_number('Введите число: ')
 print(factorial(num))
