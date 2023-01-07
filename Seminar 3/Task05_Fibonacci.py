@@ -21,3 +21,17 @@ def negafibonacci(num):
 
 num = int(input('Введите число: '))
 print(negafibonacci(num))
+
+# def positive_fib(n):
+#     positive_list = [0, 1]
+#     for i in range(n - 1):
+#         positive_list.append(positive_list[-2] + positive_list[-1])
+#     return positive_list
+
+# def negative_fib(n):
+#     negative_list = [0, 1]
+#     for i in range(n - 1):
+#         negative_list.append(negative_list[-2] - negative_list[-1])
+#     return negative_list
+
+# numbers = negative_fib(num)[::-1] + positive_fib(num)[1:]

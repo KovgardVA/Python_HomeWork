@@ -14,3 +14,9 @@ print \
         '\nРазница между максимальным и минимальным значением дробной части:',
         round(max(float_list) - min(float_list), 2)
     )
+
+import random
+
+# def fract(num):
+#     return round(num % 1, 2)
+# list_num = list(map(fract, list_num))
