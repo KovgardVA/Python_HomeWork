@@ -4,8 +4,8 @@
 
 from random import randint
 
-def fill_poly(file, coef):
-
+def fill_poly(coef, file):
+    
     k_list = [randint(0,100) for i in range(coef + 1)]
     last_k = len(k_list)
 
@@ -30,4 +30,4 @@ def fill_poly(file, coef):
 
     data.close()
 
-fill_poly('poly.txt', int(input('Введите натуральную степень многочлена: ')))
+fill_poly(int(input('Введите натуральную степень многочлена: ')), 'poly.txt')
