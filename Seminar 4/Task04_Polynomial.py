@@ -12,18 +12,19 @@ path = 'poly.txt'
 data = open(path, 'w')
 
 for i in range(last_k, 0, -1):
+    number = k_list[last_k - i]
     if i == 2:
-        if k_list[last_k - i] != 0:
-            data.writelines(f'{k_list[last_k - i]}*X ')
+        if number != 0:
+            data.writelines('X ' if number == 1 else f'{number}*X ')
             if k_list[last_k - i + 1] != 0:
                 data.writelines('+ ')
     elif i == 1:
-        if k_list[last_k - i] != 0:
-                data.writelines(f'{k_list[last_k - i]} ')
+        if number != 0:
+                data.writelines(f'{number} ')
         data.writelines('= 0')
     else:
-        if k_list[last_k - i] != 0:
-            data.writelines(f'{k_list[last_k - i]}*X^{i - 1} ')
+        if number != 0:
+            data.writelines('X^{i - 1} ' if number == 1 else f'{number}*X^{i - 1} ')
             if k_list[last_k - i + 1] != 0:
                 data.writelines('+ ')
 
