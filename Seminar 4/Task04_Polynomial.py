@@ -3,7 +3,7 @@
 # многочлен степени k.
 
 from random import randint
-from polynomial import fill
+from polynom import fill
 
 k = int(input('Введите натуральную степень многочлена: '))
 fill(k, 'poly.txt')
