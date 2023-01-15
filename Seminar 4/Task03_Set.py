@@ -12,3 +12,7 @@ for i in list_num:
 
 print(f'В нашем списке: {list_num} -\
     \nимеются данные неповторяющиеся элементы: {list_unique}')
+
+# for i in list_num:
+#     if list_num.count(i) == 1:
+#         list_unique.append(i)

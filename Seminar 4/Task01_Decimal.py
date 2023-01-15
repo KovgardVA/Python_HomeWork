@@ -13,3 +13,6 @@ def power_num(num):
 
 d = float(input('Задайте точность: '))
 print('Число Пи с заданной точность', d, '=', round(pi, power_num(d)))
+
+# n = input()
+# length = len(n.split('.')[1])
