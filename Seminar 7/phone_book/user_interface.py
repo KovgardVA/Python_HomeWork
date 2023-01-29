@@ -1,7 +1,7 @@
-def add_question():
+def user_question(text):
     action = None
     while action not in ('y', 'n'):
-        action = input('Желаете начать заполнение?\n(y/n): ').lower()
+        action = input(text).lower()
     if action == 'y': return True
     else: return False
 
@@ -10,11 +10,4 @@ def mode_question():
     while mode not in ('r', 'w'):
         mode = input('Желаете заполнить или прочитать файл?\n(w/r): ').lower()
     if mode == 'w': return True
-    else: return False
-
-def read_question():
-    action = None
-    while action not in ('y', 'n'):
-        action = input('Желаете вывести только имя и фамилию?\n(y/n): ').lower()
-    if action == 'y': return True
     else: return False
