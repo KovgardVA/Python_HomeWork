@@ -11,3 +11,10 @@ def mode_question():
         mode = input('Желаете заполнить или прочитать файл?\n(w/r): ').lower()
     if mode == 'w': return True
     else: return False
+
+def read_question():
+    action = None
+    while action not in ('y', 'n'):
+        action = input('Желаете вывести только имя и фамилию?\n(y/n): ').lower()
+    if action == 'y': return True
+    else: return False
