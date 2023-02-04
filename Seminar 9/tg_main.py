@@ -61,6 +61,11 @@ def user_turn(message):
     global flag
 
     user_sweet = int(message.text)
+    if user_sweet < 0 or user_sweet > 28:
+        msg = bot.send_message(message.chat.id, 'Количество конфет должно быть от 0 до 28.')
+        bot.register_next_step_handler(msg, user_turn)
+        return
+    
     sweets -= user_sweet
     if sweets > 0:
         bot.send_message(message.chat.id, f'Остаток конфет - {sweets}')
