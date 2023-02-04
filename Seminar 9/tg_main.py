@@ -30,7 +30,7 @@ def controller(message):
     global flag
 
     if message.text == 'Правила игры':
-        bot.send_message(message.chat.id, RULES)
+        bot.send_message(message.chat.id, message)
         button(message)
     elif message.text == 'Начать игру':
         first_turn = random.choice([BOT, USER])
